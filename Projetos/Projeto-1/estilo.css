@@ -1,0 +1,86 @@
+body{
+    margin:0%;
+    background-color: #9c9a9a;
+}
+.cabecalho{
+    background-image: url(bg-3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    
+    font-family: sans-serif;
+}
+
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: 15px;
+}
+nav{
+    text-align: right;
+}
+.a{
+    padding: 10px;
+    background-color: grey;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+.a:hover{  /* adiciona efeito de mudança de cor no link ao reagir com o cursor*/
+    background-color: rgba(0, 0, 0, 0.595);
+}
+.titulo{
+    margin-top: 175px;
+    text-align: center;
+    font-size: 43px;
+    color: white;
+    text-shadow: 3px 2px 2px black;
+    text-transform: uppercase;
+}
+.p1{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    padding: 20px 10px 20px 10px;
+    background-color: rgba(0, 0, 0, 0.607);
+    border-bottom: 1px solid white;
+    width: 35%;
+    margin: auto;
+    
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+article{
+    margin: 15px auto 0 auto;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 32px 10px 15px 10px;
+}
+
+.rodape{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.295);
+    margin: auto;
+    letter-spacing: 2px;
+
+}
+.botao{
+    padding: 10px;
+    display: inline-block;
+    background-color: grey;
+    border-radius: 6px;
+}
+.botao:hover{  
+    background-color: rgba(0, 0, 0, 0.595);
+}

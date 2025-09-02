@@ -1,0 +1,103 @@
+body{
+    background-color: #0c1014;
+    color: white;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.titulo{
+    font-size: 52px;   
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.cabecalho{
+    display: flex;
+    background-color: grey;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecalho_logo{
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-left: 16px;
+}
+.navegacao ul{
+    display: flex;
+    gap: 16px;
+    list-style-type: none;
+    font-size: 18px;
+}
+.navegacao a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+.navegacao a:hover{
+    background-color: yellow;
+    text-decoration: underline;
+    color: black;
+    border-radius: 5px;
+}
+a.navegacao_ativo{
+    background-color: greenyellow;
+    border-radius: 5px;
+    color: black;
+    pointer-events: none;
+}
+.formato{
+    display: flex;
+    gap: 16px;
+}
+.principal{
+    flex-grow: 1;
+    background-color: #1f262c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 12px black;
+    display: flex;
+    flex-direction: column;
+}
+.tipo_plano{
+    text-transform: uppercase;
+    border-bottom: 1px solid yellow;
+    padding-bottom: 10px;
+    margin-top: 0;
+    letter-spacing: 2px;
+}
+.principal p {
+    margin-top: 0;
+}
+.preco{
+    font-size: 30px;
+}
+.valores_plano{
+    margin: 0 0 35;
+    color: white;
+    padding-left: 16px;
+    line-height: 1.8;
+    flex: 1;
+}
+.valores_plano li::marker{
+    color: yellow;
+}
+
+.assinar_plano{
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: yellow;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 10px 16px 10px;
+}
+.assinar_plano:hover{
+    background-color: transparent;
+    outline: 2px yellow solid;
+    color: white;
+}

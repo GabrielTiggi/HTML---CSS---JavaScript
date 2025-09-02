@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <form class="forms" action="" autocomplete="off">
+        <fieldset>
+            <legend>Formulário de contato</legend>
+            
+            <label for="name" class="formato">Nome completo</label>
+            <input type="text" id="name" name="name" required placeholder="Digite seu nome completo" class="formato formato2">
+            
+            <label for="email" class="formato">E-mail</label>
+            <input type="email" id="email" name="email" required placeholder="Digite um email valido" class="formato formato2">
+
+            <label for="subject" class="formato">Assunto</label>
+            <input type="text" id="subject" name="subject" class="formato formato2">
+
+            <label for="message" class="formato">Mensagem</label>
+            <textarea name="Message" id="message" rows="7" required 
+                maxlength="1000" minlength="20" placeholder="Conte-nos tudo" class="formato formato2"></textarea>
+            <input type="submit" class="btn"> 
+        </fieldset>
+    </form>
+</body>
+</html>

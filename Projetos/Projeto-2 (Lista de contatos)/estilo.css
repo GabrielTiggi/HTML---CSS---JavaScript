@@ -1,0 +1,62 @@
+html{
+    height: 100%
+}
+body{
+    background-color: gray;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.lista-contato{
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 15px;
+}
+.list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.list-item{
+    display: flex;
+    border-bottom: 1px solid black;
+    padding: 16px;
+}
+.list-item-image img{
+    width: 80px;
+    border-radius: 50%;
+}
+.list-item-content{
+    padding: 0 20px;
+    flex-grow: 1;
+}
+.list-item-action{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+}
+.list-item-name{
+    color: grey;
+    font-size: 24px;
+    margin: 0;
+}
+.list-item-email{
+    color: gray;
+    margin: 10 0 0 0;
+}
+.list-item:hover{
+    background-color: #e8e8e8;
+}
+.list-item:hover .list-item-action{
+   opacity: .3;
+}
