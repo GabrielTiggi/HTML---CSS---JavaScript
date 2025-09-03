@@ -1,0 +1,154 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(#8a8a8a, #2d2d2d);
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+}
+.tabuleiro{
+    background-color: rgb(102, 101, 101);
+    width: 620px;
+    padding: 2rem;
+    box-sizing: border-box;
+    box-shadow: 0px 15px 20px -10px rgba(0 0 0 /.6) ;
+}
+.display{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 90px);
+    gap: .5rem;
+    perspective: 500px;
+}
+.cartas{
+    position: relative;
+    border: 2px solid black;
+    border-radius: 6px;
+
+    transform-style: preserve-3d;
+    transition: 1s transform ;
+}
+
+.cartas img{
+    border-radius: 6px;
+    max-width: 100%;
+    position: absolute;
+    overflow: hidden;
+    object-fit: cover ;
+    height: 100%;
+    width: 100%;
+
+    backface-visibility: hidden;
+}
+.cartas-frente{
+    transform: rotateY(180deg);
+}
+
+.tabuleiro:has(#check1:checked) .display .carta-1{
+    transform: rotateY(180deg);
+}
+.tabuleiro:has(#check2:checked) .display .carta-2{
+    transform: rotateY(180deg);
+}
+.tabuleiro:has(#check3:checked) .display .carta-3{
+    transform: rotateY(180deg);
+}
+.tabuleiro:has(#check4:checked) .display .carta-4{
+    transform: rotateY(180deg);
+}
+.tabuleiro:has(#check5:checked) .display .carta-5{
+    transform: rotateY(180deg);
+}
+.tabuleiro:has(#check6:checked) .display .carta-6{
+    transform: rotateY(180deg);
+}
+.tabuleiro:has(#check7:checked) .display .carta-7{
+    transform: rotateY(180deg);
+}
+.tabuleiro:has(#check8:checked) .display .carta-8{
+    transform: rotateY(180deg);
+}
+.tabuleiro:has(#check9:checked) .display .carta-9{
+    transform: rotateY(180deg);
+}
+.tabuleiro:has(#check10:checked) .display .carta-10{
+    transform: rotateY(180deg);
+}
+.tabuleiro:has(#check11:checked) .display .carta-11{
+    transform: rotateY(180deg);
+}
+.tabuleiro:has(#check12:checked) .display .carta-12{
+    transform: rotateY(180deg);
+}
+.tabuleiro:has(#check13:checked) .display .carta-13{
+    transform: rotateY(180deg);
+}
+.tabuleiro:has(#check14:checked) .display .carta-14{
+    transform: rotateY(180deg);
+}
+.tabuleiro:has(#check15:checked) .display .carta-15{
+    transform: rotateY(180deg);
+}
+.tabuleiro:has(#check16:checked) .display .carta-16{
+    transform: rotateY(180deg);
+}
+
+.tabuleiro:has(#check1:focus) .display .carta-1{
+    outline: 2px solid red;
+}
+.tabuleiro:has(#check2:focus) .display .carta-2{
+    outline: 2px solid red;
+}
+.tabuleiro:has(#check3:focus) .display .carta-3{
+    outline: 2px solid red;
+}
+.tabuleiro:has(#check4:focus) .display .carta-4{
+    outline: 2px solid red;
+}
+.tabuleiro:has(#check5:focus) .display .carta-5{
+    outline: 2px solid red;
+}
+.tabuleiro:has(#check6:focus) .display .carta-6{
+    outline: 2px solid red;
+}
+.tabuleiro:has(#check7:focus) .display .carta-7{
+    outline: 2px solid red;
+}
+.tabuleiro:has(#check8:focus) .display .carta-8{
+    outline: 2px solid red;
+}
+.tabuleiro:has(#check9:focus) .display .carta-9{
+    outline: 2px solid red;
+}
+.tabuleiro:has(#check10:focus) .display .carta-10{
+    outline: 2px solid red;
+}
+.tabuleiro:has(#check11:focus) .display .carta-11{
+    outline: 2px solid red;
+}
+.tabuleiro:has(#check12:focus) .display .carta-12{
+    outline: 2px solid red;
+}
+.tabuleiro:has(#check13:focus) .display .carta-13{
+    outline: 2px solid red;
+}
+.tabuleiro:has(#check14:focus) .display .carta-14{
+    outline: 2px solid red;
+}
+.tabuleiro:has(#check15:focus) .display .carta-15{
+    outline: 2px solid red;
+}
+.tabuleiro:has(#check16:focus) .display .carta-16{
+    outline: 2px solid red;
+}
+.controles{
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <style>
+        body{
+            background-color: rgb(72, 72, 245);
+            color: white;
+        }
+        .calculadora{
+            box-shadow: 2px 2px 2px black;
+            background-color: rgb(27, 27, 102);
+            height: 250px;
+            width: 150px;
+            margin: 100px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        .tela{
+            background-color: black;
+            width: 130px;
+            height: 40px;
+            border-radius: 5px;
+            font-size: 25px;
+            align-content: center;
+            text-align: right;
+        }
+        .tela p{
+            margin: 0;
+        }
+        .teclado{
+            height: 150px;
+            width: 130px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+        }
+        .gridItem{
+            align-content: center;
+            text-align: center;
+            background-color: rgb(24, 24, 24);
+            border-radius: 2px;
+        }
+        .adicao{
+            grid-row: span 2;
+        }
+        .n0{
+            grid-column: span 2;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <div class="calculadora">
+        <div class="tela"><p>0</p>
+        </div>
+        <div class="teclado">
+            <div class="ac gridItem">AC</div>
+            <div class="porcentagem gridItem">%</div>
+            <div class="multiplicacao gridItem">X</div>
+            <div class="divisao gridItem">/</div>
+            <div class="n7 gridItem">7</div>
+            <div class="n8 gridItem">8</div>
+            <div class="n9 gridItem">9</div>
+            <div class="igual gridItem">=</div>
+            <div class="n4 gridItem">4</div>
+            <div class="n5 gridItem">5</div>
+            <div class="n6 gridItem">6</div>
+            <div class="subtracao gridItem">-</div>
+            <div class="n1 gridItem">1</div>
+            <div class="n2 gridItem">2</div>
+            <div class="n3 gridItem">3</div>
+            <div class="adicao gridItem">+</div>
+            <div class="n0 gridItem">0</div>
+            <div class="ponto gridItem">.</div>
+        </div>
+
+
+        
+    </div>
+
+
+
+
+
+</body>
+</html>

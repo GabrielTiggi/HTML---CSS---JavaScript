@@ -1,0 +1,83 @@
+body{
+    width: 100%;
+    background-image:url(bg-2.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    color: white; 
+
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho{
+    text-align: center;
+}
+.cabecalho h1{
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0  3px 3px black;
+    margin-top: 50px;
+}
+.cabecalho p{
+    background-color: rgba(0, 0, 0, 0.567);
+    padding: 14px;
+    border-bottom: 2px solid white;
+    width: 60%;
+    margin: auto;
+    font-size: 12px;
+}
+.principal{
+    background-color: white;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0 20px 0;
+    justify-content: space-evenly;
+}
+.quadro{
+    margin: 10px 0 10px 0px;
+    height: 110px;
+    width: 170px;
+}
+.quadro h2{
+    background-color: rgba(0, 0, 0, 0.615);
+    font-size: 12px;
+    padding: 3px;
+    margin-top: 90px;
+}
+.img1{
+    background-image:url(card_01.png);
+    background-size: cover;
+    background-position: center;
+}
+.img2{
+    background-image:url(card_02.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img3{
+    background-image:url(card_03.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img4{
+    background-image:url(card_04.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img5{
+    background-image:url(card_05.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img6{
+    background-image:url(card_01.png);
+    background-size: cover;
+    background-position: center;
+}
+

@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: gray;
+    gap:1em;
+}
+img{
+    max-width: 100%;
+    display: block;
+    opacity: 0.7;
+}
+.galeria{
+    width: 60rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+    background-color: white;
+    justify-content: space-between;
+    padding: .5em;
+    box-shadow: 0 0 10px black;
+}
+.galeria .imagem{
+    flex-basis: calc(25% - .5em);
+    position: relative;
+    overflow: hidden; /*Para esconder o paragrafo que fica pra fora da caixa*/
+}
+.galeria a{
+    text-decoration: none;
+}
+.galeria p{
+    color: white;
+    text-transform: uppercase;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, .8);
+    letter-spacing: 2px;
+    font-size: .75em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: .5;
+    transform: translatey(100%);
+    transition: all 1s ease;
+}
+.imagem:hover p{
+    transform: translateY(0);
+    opacity: 1;
+}
+img:hover{
+    transform: scale(1.2);
+    transition: all .5s ease;
+    opacity: 1;
+}
+
